@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+</head>
+<body>
+    <h3 style="text-align: center; color: rgb(122, 152, 149);"><i> SISTEMA DE GESTIÓN DE INVENTARIO, VENTAS Y COMPRAS </i></h3>
+    
+    <h3 style="text-align: center;"><u>Inventario</u></h3>
+    <label for="codigoInv">Código:</label>
+    <input type="text" id="codigoInv">
+    
+    <label for="articulo">Artículo:</label>
+    <input type="text" id="articulo">
+    
+    <label for="entrada">Entrada:</label>
+    <input type="number" id="entrada">
+    
+    <label for="salida">Salida:</label>
+    <input type="number" id="salida">
+    
+    <label for="stock">Stock:</label>
+    <input type="number" id="stock">
+    
+    <button type="button" onclick="registrarInventario()">Registrar Inventario</button>
+
+    <table id="tablaInventario" border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Artículo</th>
+                <th>Entrada</th>
+                <th>Salida</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h3 style="text-align: center;"><u>Ventas</u></h3>
+    <label for="codigoVenta">Código:</label>
+    <input type="text" id="codigoVenta">
+    
+    <label for="productoVenta">Producto:</label>
+    <input type="text" id="productoVenta">
+    
+    <label for="cantidadVenta">Cantidad:</label>
+    <input type="number" id="cantidadVenta">
+    
+    <button type="button" onclick="registrarVenta()">Registrar Venta</button>
+
+    <table id="tablaVentas" border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h3 style="text-align: center;"><u>Compras</u></h3>
+    <label for="codigoCompra">Código:</label>
+    <input type="text" id="codigoCompra">
+    
+    <label for="productoCompra">Producto:</label>
+    <input type="text" id="productoCompra">
+    
+    <label for="cantidadCompra">Cantidad:</label>
+    <input type="number" id="cantidadCompra">
+    
+    <button type="button" onclick="registrarCompra()">Registrar Compra</button>
+
+    <table id="tablaCompras" border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

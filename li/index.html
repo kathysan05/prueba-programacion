@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Inventario de Productos</h1>
+    
+    <!-- Formulario para agregar/actualizar producto -->
+    <div>
+        <label for="productName">Producto:</label>
+        <input type="text" id="productName" placeholder="Nombre del producto"><br><br>
+        
+        <label for="productCode">Código:</label>
+        <input type="text" id="productCode" placeholder="Código del producto"><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" placeholder="fecha del producto" min="0" step="0.01"><br><br>
+        
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" placeholder="Cantidad del producto" min="0"><br><br>
+        
+        <label for="price">Precio:</label>
+        <input type="number" id="price" placeholder="Precio del producto" min="0" step="0.01"><br><br>
+        
+        <button onclick="addProduct()">Agregar Producto</button>
+        <button onclick="eliminar()">Eliminar</button>
+        <button onclick="actualizar()">Actualizar</button>
+    
+    
+    <h2>Lista de Productos</h2>
+    <table border="1px" width="100%" id="productTable">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Código</th>
+                <th>Fecha</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Entrada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los productos se agregarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="App.Js"></script>
+</body>
+</html>
